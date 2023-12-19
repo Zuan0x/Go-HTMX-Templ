@@ -1,8 +1,12 @@
 package user
-import "github.com/Zuan0x/got/view/layout"
 
-templ Show() {
+import (
+    "github.com/Zuan0x/got/view/layout"
+    "github.com/Zuan0x/got/model"
+)
+
+templ Show(u model.User) {
     @layout.Base() {
-        <h1> Hello!!</h1>
+        <h1> Hello {u.Email}!!</h1>
     }
 }
