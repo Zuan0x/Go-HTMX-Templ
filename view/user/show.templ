@@ -1,5 +1,8 @@
 package user
+import "github.com/Zuan0x/got/view/layout"
 
 templ Show() {
-    <h1> Hello!!</h1>
+    @layout.Base() {
+        <h1> Hello!!</h1>
+    }
 }

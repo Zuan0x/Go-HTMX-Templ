@@ -1,0 +1,74 @@
+package layout
+
+templ Base() {
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8"/>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+            <title>Your Dashboard</title>
+            <!-- Add your CSS stylesheets or links to CDN here -->
+            <style>
+                body {
+                    font-family: Arial, sans-serif;
+                    margin: 0;
+                    padding: 0;
+                    background-color: #f4f4f4;
+                }
+
+                header {
+                    background-color: #333;
+                    color: #fff;
+                    padding: 10px;
+                    text-align: center;
+                }
+
+                nav {
+                    background-color: #555;
+                    color: #fff;
+                    padding: 10px;
+                    text-align: center;
+                }
+
+                section {
+                    padding: 20px;
+                }
+
+                footer {
+                    background-color: #333;
+                    color: #fff;
+                    padding: 10px;
+                    text-align: center;
+                    position: fixed;
+                    bottom: 0;
+                    width: 100%;
+                }
+            </style>
+        </head>
+        <body>
+
+            <header>
+                <h1>Your Dashboard</h1>
+            </header>
+
+            <nav>
+                <a href="#">Home</a> |
+                <a href="#">Dashboard</a> |
+                <a href="#">Settings</a>
+                <!-- Add more navigation links as needed -->
+            </nav>
+
+            <section>
+                <!-- Your dashboard content goes here -->
+                <h2>Welcome to Your Dashboard</h2>
+                <p>This is where you can display various widgets, charts, and information.</p>
+            </section>
+
+            This is from the base layout
+            { children... }
+
+            <footer>
+                <p>&copy; 2023 Your Dashboard. All rights reserved.</p>
+            </footer>
+        </body>
+</html>
+}
