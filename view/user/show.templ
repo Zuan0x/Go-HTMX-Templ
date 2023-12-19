@@ -3,10 +3,15 @@ package user
 import (
     "github.com/Zuan0x/got/view/layout"
     "github.com/Zuan0x/got/model"
+    "github.com/Zuan0x/got/view/components"
 )
 
 templ Show(u model.User) {
     @layout.Base() {
         <h1> Hello {u.Email}!!</h1>
+        @components.Input(components.InputProps{
+            Typ: "email",
+            Name: "email",
+        })
     }
 }

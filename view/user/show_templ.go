@@ -12,6 +12,7 @@ import "bytes"
 
 import (
 	"github.com/Zuan0x/got/model"
+	"github.com/Zuan0x/got/view/components"
 	"github.com/Zuan0x/got/view/layout"
 )
 
@@ -54,6 +55,13 @@ func Show(u model.User) templ.Component {
 				return templ_7745c5c3_Err
 			}
 			_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString("</h1>")
+			if templ_7745c5c3_Err != nil {
+				return templ_7745c5c3_Err
+			}
+			templ_7745c5c3_Err = components.Input(components.InputProps{
+				Typ:  "email",
+				Name: "email",
+			}).Render(ctx, templ_7745c5c3_Buffer)
 			if templ_7745c5c3_Err != nil {
 				return templ_7745c5c3_Err
 			}
